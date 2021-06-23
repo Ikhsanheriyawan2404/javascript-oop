@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Field</title>
+</head>
+<body>
+    <script>
+
+        class Configuration {
+            static name = "Belajar JavaScript OOP";
+            static version = "1.0.0";
+            static author = "Ikhsan Heriyawan";
+        }
+
+        const ikhsan = new Configuration();
+        console.info(Configuration.name);
+        console.info(Configuration.version);
+        console.info(Configuration.author);
+
+        Configuration.author = "Kuncoro Hiruma";
+        console.info(Configuration.author); 
+
+    </script>
+</body>
+</html>
